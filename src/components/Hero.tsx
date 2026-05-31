@@ -108,7 +108,7 @@ export const Hero: React.FC = () => {
               Contact Me <Send size={18} />
             </a>
             <a
-              href="Resume_IntisarMuhib.pdf"
+              href="/Resume_IntisarMuhib.pdf"
               className="flex items-center justify-center gap-2 glass-panel hover:bg-white/5 text-white font-semibold px-6 py-3 rounded-lg hover:border-primary/45 transition-all duration-300 w-full sm:w-auto text-center"
               download="Resume_IntisarMuhib.pdf"
             >
