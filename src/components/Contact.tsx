@@ -61,10 +61,11 @@ export const Contact: React.FC = () => {
         } else {
           throw new Error(result.message || 'Failed to submit form to Web3Forms.');
         }
-      } catch (error: any) {
-        console.error('Web3Forms Error:', error);
+      } catch (error) {
+        const err = error as Error;
+        console.error('Web3Forms Error:', err);
         setStatus('error');
-        setErrorMessage(error.message || 'Something went wrong. Please try again later.');
+        setErrorMessage(err.message || 'Something went wrong. Please try again later.');
       }
       return;
     }
@@ -80,10 +81,11 @@ export const Contact: React.FC = () => {
         );
         setStatus('success');
         setFormData({ name: '', email: '', subject: '', message: '' });
-      } catch (error: any) {
-        console.error('EmailJS Error:', error);
+      } catch (error) {
+        const err = error as { text?: string; message?: string };
+        console.error('EmailJS Error:', err);
         setStatus('error');
-        setErrorMessage(error.text || 'Something went wrong with EmailJS. Please try again later.');
+        setErrorMessage(err.text || err.message || 'Something went wrong with EmailJS. Please try again later.');
       }
       return;
     }

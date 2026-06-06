@@ -38,6 +38,26 @@ export const Experience: React.FC = () => {
       ],
       icon: <Award size={20} className="text-white" />,
     },
+    {
+      type: 'certification',
+      title: 'React (Basic)',
+      organization: 'HackerRank',
+      period: 'Completed',
+      achievements: [
+        'Validated proficiency in React fundamentals, state management, hooks, and component lifecycle.',
+      ],
+      icon: <Award size={20} className="text-white" />,
+    },
+    {
+      type: 'certification',
+      title: 'Problem Solving (Basic)',
+      organization: 'HackerRank',
+      period: 'Completed',
+      achievements: [
+        'Demonstrated analytical skills and programming proficiency in solving core algorithmic and data structure problems.',
+      ],
+      icon: <Award size={20} className="text-white" />,
+    },
   ];
 
   return (
