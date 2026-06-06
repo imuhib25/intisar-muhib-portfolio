@@ -31,6 +31,7 @@ export const Experience: React.FC = () => {
     {
       type: 'certification',
       title: 'Public Speaking Fundamentals',
+      href: 'https://certificate.muktopaath.gov.bd/storage/uploads/certificates/1722fe001659e0889402c2af136222e7.jpg',
       organization: 'Muktopaath',
       period: 'Completed',
       achievements: [
@@ -41,6 +42,7 @@ export const Experience: React.FC = () => {
     {
       type: 'certification',
       title: 'React (Basic)',
+      href: 'https://www.hackerrank.com/certificates/f3d8bb9bbb0b',
       organization: 'HackerRank',
       period: 'Completed',
       achievements: [
@@ -51,6 +53,7 @@ export const Experience: React.FC = () => {
     {
       type: 'certification',
       title: 'Problem Solving (Basic)',
+      href: 'https://www.hackerrank.com/certificates/a5183e7d27f9',
       organization: 'HackerRank',
       period: 'Completed',
       achievements: [
