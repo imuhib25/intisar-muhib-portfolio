@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Briefcase, GraduationCap, Award, CheckCircle } from 'lucide-react';
+import { Briefcase, GraduationCap, Award, CheckCircle, ExternalLink } from 'lucide-react';
 
 export const Experience: React.FC = () => {
   const experiences = [
@@ -112,7 +112,20 @@ export const Experience: React.FC = () => {
                     <span className="text-xs font-semibold uppercase tracking-wider text-primary px-2.5 py-1 rounded bg-primary/10 border border-primary/20 mr-2">
                       {item.type}
                     </span>
-                    <h3 className="text-xl font-bold text-white mt-2">{item.title}</h3>
+                    <h3 className="text-xl font-bold text-white mt-2 flex items-center gap-2">
+                      {item.title}
+                      {item.href && (
+                        <a
+                          href={item.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-primary hover:text-secondary transition-colors duration-200"
+                          title="View Credential"
+                        >
+                          <ExternalLink size={16} />
+                        </a>
+                      )}
+                    </h3>
                     <p className="text-sm text-text-secondary font-medium">{item.organization}</p>
                   </div>
                   <span className="text-xs font-mono text-text-secondary bg-white/5 border border-glass-border px-3 py-1 rounded-full">
